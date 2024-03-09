@@ -1,5 +1,5 @@
 {
-  "name": "@gitea-tool-cache/version-alias",
+  "name": "gitea-tool-cache-version-alias",
   "version": "0.0.1",
   "description": "kongxiangyiren/gitea-tool-cache获取环境版本号",
   "files": [
@@ -10,7 +10,7 @@
   "types": "./index.d.mts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "ncc build -o dist src/index.mts"
+    "build": "ncc build -m -o dist src/index.mts"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
@@ -30,7 +30,7 @@
     "url": "https://github.com/kongxiangyiren/version-alias/issues"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.com"
+    "registry": "https://registry.npmjs.org"
   },
   "author": "空巷一人",
   "license": "MIT",

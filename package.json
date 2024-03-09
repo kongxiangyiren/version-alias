@@ -1,0 +1,43 @@
+{
+  "name": "@gitea-tool-cache/version-alias",
+  "version": "0.0.1",
+  "description": "kongxiangyiren/gitea-tool-cache获取环境版本号",
+  "files": [
+    "dist",
+    "index.d.mts"
+  ],
+  "main": "./dist/index.js",
+  "types": "./index.d.mts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "ncc build -o dist src/index.mts"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^18",
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "node-version-alias": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kongxiangyiren/version-alias.git"
+  },
+  "homepage": "https://github.com/kongxiangyiren/version-alias#readme",
+  "bugs": {
+    "url": "https://github.com/kongxiangyiren/version-alias/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  },
+  "author": "空巷一人",
+  "license": "MIT",
+  "keywords": [
+    "gitea",
+    "gitea actions",
+    "gitea-tool-cache",
+    "version-alias"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18",
+  "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "removeComments": true,
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "src/index.mts"],
+  "exclude": ["node_modules", "dist"]
+}

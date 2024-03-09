@@ -1,6 +1,6 @@
 {
   "name": "gitea-tool-cache-version-alias",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "kongxiangyiren/gitea-tool-cache获取环境版本号",
   "files": [
     "dist",
@@ -10,16 +10,16 @@
   "types": "./index.d.mts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "ncc build -m -o dist src/index.mts"
+    "build": "ncc build -o dist src/index.mts"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^18",
+    "@tsconfig/node16": "^16.1.1",
+    "@types/node": "^16",
     "@vercel/ncc": "^0.38.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "node-version-alias": "^5.0.0"
+    "node-version-alias": "^4"
   },
   "repository": {
     "type": "git",
